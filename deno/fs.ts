@@ -1,5 +1,5 @@
 // read text
-async function rt(file, opt = {}) {
+export async function rt(file, opt = {}) {
     let text = null;
     try {
         text = await Deno.readTextFile(file);
@@ -18,7 +18,7 @@ async function rt(file, opt = {}) {
 }
 
 // write text
-async function wt(file, data, opt) {
+export async function wt(file, data, opt) {
     try {
         await Deno.writeTextFile(file, data, { append: !!opt?.append });
     } catch (error) {
