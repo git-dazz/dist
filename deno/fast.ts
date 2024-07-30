@@ -34,7 +34,7 @@ export function fast({ logger = true, host = "0.0.0.0", port = 3000 }) {
         return Fastify({ logger: logger });
     }).task(app => {
         app.addContentTypeParser('application/json', { parseAs: 'string' }, function (request, body, done) {
-            console.log(request.raw.toString());
+            // console.log(request.raw.toString());
             try {
                 let data = JSON.parse(body);
                 request.rawBody = body;
