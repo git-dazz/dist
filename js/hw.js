@@ -1,5 +1,6 @@
-console.log("hello");
+console.info("hello");
 
 function hw() {
-    console.log("hello");
+    console.info("hello");
 }
+console.info("hello end");
