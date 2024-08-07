@@ -2,7 +2,7 @@ import { rt } from "./fs.ts"
 import { toml } from "./ecd.ts"
 
 import { Edge } from 'npm:edge.js'
-
+export { tar, untar, unzip, zip } from "https://deno.land/x/nzip/mod.ts";
 export function random(len, chars) {
     let str = '';
     for (let i = 0; i < len; i++) {
